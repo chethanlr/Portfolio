@@ -644,13 +644,14 @@ section:nth-child(6) { animation-delay: 0.6s; }
         <span class="cursor">|</span>
       </div>
       <div class="cta-buttons">
-        <button onclick="downloadResume()" class="btn btn-primary">
-          📄 Download Resume
-        </button>
-        <a href="#contact" class="btn btn-secondary">
-          💬 Get In Touch
-        </a>
-      </div>
+  <a href="ChethanResume.pdf" download="Chethan_LR_Resume.pdf" class="btn btn-primary">
+    📄 Download Resume
+  </a>
+  <a href="#contact" class="btn btn-secondary">
+    💬 Get In Touch
+  </a>
+</div>
+
     </div>
   </header>
 
@@ -827,26 +828,7 @@ Comprehensive comparison of FPGA and ASIC accelerators for AI workloads with rea
 DeepSeek R1-MoDCE: A Contrastive Pretraining Approach for Language Models (In Progress)
 Explores a contrastive learning strategy for improving contextual understanding in LLMs.`;
 
-    // Download Resume Function
-    function downloadResume() {
-      // Create a blob with the resume content
-      const blob = new Blob([resumeContent], { type: 'text/plain' });
-      
-      // Create a temporary URL for the blob
-      const url = window.URL.createObjectURL(blob);
-      
-      // Create a temporary anchor element and trigger download
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'Chethan_LR_Resume.txt';
-      document.body.appendChild(a);
-      a.click();
-      
-      // Clean up
-      document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
-    }
-
+   
     // Typewriter Effect
     const texts = [
       "AI Research Enthusiast",
