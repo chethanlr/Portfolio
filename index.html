@@ -4,100 +4,151 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chethan L R | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <header>
-    <h1>Chethan L R</h1>
-    <p><span id="typewriter"></span></p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#research">Research</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a href="Chethan_Resume.pdf" download class="btn">Download Resume</a>
+    <div class="particles"></div>
+    <div class="hero-content">
+      <h1>Chethan L R</h1>
+      <div class="typewriter-container">
+        <span id="typewriter"></span>
+        <span class="cursor">|</span>
+      </div>
+      <div class="cta-buttons">
+        <a href="Chethan_Resume.pdf" download class="btn btn-primary">
+          📄 Download Resume
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          💬 Get In Touch
+        </a>
+      </div>
+    </div>
   </header>
 
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I'm a final-year Computer Science student passionate about AI, Web Development, and IoT. Certified by Accenture (Gold Aspire), and a national hackathon finalist with active research in AI acceleration and LLMs.</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🎓 Education & Background</h3>
+          <p>Final-year Computer Science student with a passion for cutting-edge technology and innovation. Certified by Accenture Gold Aspire program, demonstrating excellence in technical skills and professional development.</p>
+        </div>
+        <div class="card">
+          <h3>🏆 Achievements</h3>
+          <p>National hackathon finalist with active research contributions in AI acceleration and Large Language Models. Recognized for exceptional problem-solving abilities and innovative thinking in competitive programming.</p>
+        </div>
+        <div class="card">
+          <h3>🚀 Interests</h3>
+          <p>Deeply fascinated by Artificial Intelligence, Web Development, and Internet of Things. Constantly exploring the intersection of these technologies to create impactful solutions for real-world problems.</p>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>Decentralized AI Dataset Marketplace</strong> – Built with Python + Flask + Blockchain Concepts</li>
-        <li><strong>Health Tracker & Predictive Analytics</strong> – HTML, Java, Python</li>
-        <li><strong>Smart Locking System (IoT)</strong> – C, IoT Devices</li>
-        <li><strong>Payroll Management System</strong> – HTML, PHP, SQL</li>
-      </ul>
+      <h2>Featured Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🔗 Decentralized AI Dataset Marketplace</h3>
+          <p>Revolutionary platform combining AI and blockchain technology for secure dataset trading. Built with Python, Flask, and blockchain concepts to ensure data integrity and fair compensation.</p>
+        </div>
+        <div class="card">
+          <h3>🏥 Health Tracker & Predictive Analytics</h3>
+          <p>Comprehensive health monitoring system with predictive capabilities. Utilizes machine learning algorithms to provide personalized health insights and early warning systems.</p>
+        </div>
+        <div class="card">
+          <h3>🔐 Smart Locking System (IoT)</h3>
+          <p>Intelligent security solution integrating IoT devices with advanced authentication mechanisms. Features real-time monitoring and remote access control capabilities.</p>
+        </div>
+        <div class="card">
+          <h3>💼 Payroll Management System</h3>
+          <p>Streamlined payroll processing application with automated calculations and comprehensive reporting. Built with modern web technologies for optimal user experience.</p>
+        </div>
+      </div>
     </section>
 
     <section id="research">
-      <h2>Research</h2>
-      <ul>
-        <li><strong>AI Acceleration with FPGA and ASICs</strong> – Benchmarking & comparative analysis</li>
-        <li><strong>DeepSeek R1-MoDCE</strong> – Contrastive learning for LLMs</li>
-      </ul>
+      <h2>Research & Innovation</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>⚡ AI Acceleration with FPGA and ASICs</h3>
+          <p>Comprehensive benchmarking and comparative analysis of hardware acceleration techniques for AI workloads. Exploring the performance benefits and trade-offs of different acceleration approaches.</p>
+        </div>
+        <div class="card">
+          <h3>🧠 DeepSeek R1-MoDCE</h3>
+          <p>Advanced research in contrastive learning methodologies for Large Language Models. Investigating novel approaches to improve model efficiency and performance through innovative training techniques.</p>
+        </div>
+      </div>
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
-      <p>C, Java, Python, HTML, PHP, SQL, Git, LaTeX, Excel, Arduino, Flask</p>
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill-tag">C</div>
+        <div class="skill-tag">Java</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">HTML/CSS</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">SQL</div>
+        <div class="skill-tag">Git</div>
+        <div class="skill-tag">LaTeX</div>
+        <div class="skill-tag">Arduino</div>
+        <div class="skill-tag">Machine Learning</div>
+        <div class="skill-tag">IoT</div>
+        <div class="skill-tag">Blockchain</div>
+      </div>
     </section>
 
     <section id="certs">
       <h2>Certifications & Achievements</h2>
-      <ul>
-        <li>Accenture Gold Aspire Graduate</li>
-        <li>Infosys Springboard & Ideatone Participant</li>
-        <li>Hackathon Finalist</li>
-        <li>500+ CodeChef Problems Solved</li>
-      </ul>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🏅 Professional Certifications</h3>
+          <ul>
+            <li>Accenture Gold Aspire Graduate</li>
+            <li>Infosys Springboard Participant</li>
+            <li>Ideatone Program Participant</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>🎯 Competitive Achievements</h3>
+          <ul>
+            <li>National Hackathon Finalist</li>
+            <li>500+ CodeChef Problems Solved</li>
+            <li>Active Research Contributor</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: chethanlrlr2637@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/chethanlr" target="_blank">chethanlr</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/chethan-l-r" target="_blank">chethan-l-r</a></p>
+      <h2>Let's Connect</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h3>📧 Email</h3>
+          <a href="mailto:chethanlrlr2637@gmail.com">chethanlrlr2637@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <h3>💻 GitHub</h3>
+          <a href="https://github.com/chethanlr" target="_blank">github.com/chethanlr</a>
+        </div>
+        <div class="contact-item">
+          <h3>🔗 LinkedIn</h3>
+          <a href="https://linkedin.com/in/chethan-l-r" target="_blank">linkedin.com/in/chethan-l-r</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Chethan L R | Made with ❤️</p>
+    <p>&copy; 2025 Chethan L R | Crafted with passion and innovation ❤️</p>
   </footer>
-
-  <script>
-    const words = ["AI Enthusiast", "Web Developer", "IoT Builder", "Researcher"];
-    let i = 0, j = 0, currentWord = "", isDeleting = false;
-    const element = document.getElementById("typewriter");
-
-    function type() {
-      if (i < words.length) {
-        if (!isDeleting && j <= words[i].length) {
-          currentWord = words[i].substring(0, j++);
-        } else if (isDeleting && j >= 0) {
-          currentWord = words[i].substring(0, j--);
-        }
-
-        element.textContent = currentWord;
-
-        if (j === words[i].length && !isDeleting) {
-          isDeleting = true;
-          setTimeout(type, 1000);
-        } else if (j === 0 && isDeleting) {
-          isDeleting = false;
-          i = (i + 1) % words.length;
-        }
-
-        setTimeout(type, isDeleting ? 50 : 100);
-      }
-    }
-
-    type();
-  </script>
 </body>
 </html>
